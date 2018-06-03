@@ -1,0 +1,431 @@
+/**index.wxss**/
+html,body{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+.content{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+}
+.content text.river{
+	font-family: PingFangSC-Medium;
+	font-size: 44rpx;
+	color: #101D37;
+}
+.content text.shop{
+	font-family: PingFangSC-Regular;
+	font-size: 22rpx;
+	color: #B199FF;
+	margin-left: 48rpx;
+}
+.content text.sale{
+	font-family: PingFangSC-Regular;
+	font-size: 22rpx;
+	color: #00AE66;
+  margin-left:25rpx;
+}
+.content view{
+	font-family: PingFangSC-Regular;
+	font-size: 26rpx;
+	color: #6B7072;
+  margin-top:25rpx;
+}
+.include{
+  height:380rpx;
+}
+.include>image{
+	width:376rpx;
+	height:360rpx;
+	float:left;
+  margin-top:20rpx;
+}
+.include .image image{
+	width:232rpx;
+	height:174rpx;
+	margin-left: 10rpx;
+  margin-top:20rpx;
+}
+.include .image image.active{
+  margin-top:3rpx;
+}
+.bg{
+  width:232rpx;
+	height:174rpx;
+  background: #000000;
+  opacity: 0.4;
+  position:relative;
+  top:-201rpx;
+  left:386rpx;
+  text-align: center;
+}
+.bg view{
+  color: #FFFFFF;
+}
+.bg .jia{
+   position:relative;
+   top:50rpx;
+}
+.bg .look-more{
+  line-height:110rpx;
+}
+.clearfix:after{
+	display:block;
+	height:0;
+	content:"";
+	clear:both;
+}
+.content ul{
+	width:100%;
+}
+.content ul li{
+	width:33.333%;
+	float:left;
+}
+.content ul li view{
+	font-family: PingFangSC-Regular;
+	font-size: 30rpx;
+	color: #9399A5;
+}
+.content ul li text{
+	font-family: PingFangSC-Medium;
+	font-size: 30rpx;
+	color: #FA5741;
+}
+.content view.time{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #003900;
+}
+.content view.address{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #003900;
+}
+.content view text{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #3072F6;
+}
+.ad{
+	margin-left: 48rpx;
+  margin-top:20px;
+	height:100rpx;
+	width:654rpx;
+	text-align: center;
+	background: rgba(242,161,47,0.15);
+	border-radius: 2rpx;
+}
+.ad image{
+  width:40rpx;
+  height:50rpx;
+  margin-top:15rpx;
+}
+.ad text.discount{
+	line-height: 100rpx;
+	color: #FA5741;
+	font-size: 25rpx;
+}
+.ad text.take{
+	float:right;
+	width:138rpx;
+	height: 52rpx;
+  line-height: 52rpx;
+	background: #FA5741;
+	border-radius: 10rpx;
+	color:white;
+  margin-top: 25rpx;
+  margin-right: 25rpx;
+}
+.more-mes{
+	margin-left: 48rpx;
+	height:88rpx;
+	line-height: 88rpx;
+	width:654rpx;
+	text-align: center;
+	background:  #F9F9F9;
+	border-radius: 2rpx;
+	margin-top: 20rpx;
+}
+.more-mes text{
+	font-family: PingFangSC-Medium;
+	font-size: 25rpx;
+	color: #3072F6;
+}
+.line{
+	height:24rpx;
+	background: #F8F8F9;
+	margin-top: 20rpx;
+}
+.num{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+	margin-top: 20rpx;
+}
+.room text{
+	margin-right: 20rpx;
+	font-family: PingFangSC-Medium;
+	font-size: 45rpx;
+	color: #101D37;
+}
+.room text.active{
+	color: #3072F6;
+}
+.list{
+  margin-top:40rpx;
+}
+.list image{
+	width:210rpx;
+	height:192rpx;
+	float:left;
+  margin-top:15rpx;
+  margin-right:20rpx;
+}
+.list-content text.layout{
+	font-family: PingFangHK-Medium;
+	font-size: 25rpx;
+	color: #394043;
+}
+.list-content text.sale{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #00AE66;
+  margin-left:20rpx;
+}
+.list-content text.hot{
+	font-family: PingFangSC-Medium;
+	font-size: 20rpx;
+	color: #FFFFFF;
+  margin-left:20rpx;
+	background-image: linear-gradient(-164deg, #FF6F33 0%, #FA415F 100%);
+	box-shadow: 0 1px 2px 0 rgba(251,72,90,0.50);
+	border-radius: 8px 2px 8px 2px;
+}
+.list-content>view{
+	font-family: PingFangHK-Regular;
+	font-size: 25rpx;
+	color: #6B7072; 
+   margin-top:20rpx; 
+}
+.list-content view text{
+	border: 1px solid #E5E5E5;
+	border-radius: 2px;
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9C9FA1;
+}
+.list-content view.money{
+	font-family: PingFangHK-Medium;
+	font-size: 25rpx;
+	color: #FE615A;
+}
+.user-comment{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+	margin-top: 48rpx;
+}
+.user-comment text.user{
+	font-family: PingFangHK-Medium;
+	font-size: 35rpx;
+	color: #101D37;
+}
+.user-comment text.more{
+	float:right;
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9399A5;
+}
+.point image{
+	width:20rpx;
+	height:20rpx; 
+	margin-right: 20rpx;
+	margin-top: 20rpx;
+}
+.point text.score{
+	font-family: PingFangHK-Regular;
+	font-size: 35rpx;
+	color: #666666;
+	margin-left: 20rpx; 
+  margin-top:20rpx;
+}
+.point text.score text{
+	font-family: PingFangHK-Medium;
+	font-size: 45rpx;
+	color: #FF7326;
+}
+ view.grade text{
+  margin-right:20rpx;
+}
+.user-comment>view.grade>text{
+	font-family: PingFangHK-Regular;
+	font-size: 25rpx;
+	color: #999999;
+}
+.border{
+	border:1px solid #E5E5E5;
+  margin-top:20rpx;
+}
+.user-comment .buy text{
+	height:80rpx;
+	line-height: 80rpx;
+  background: #F3F4F5;
+  padding-left:20rpx;
+  padding-right:20rpx;
+	border-radius: 50px;
+	margin-top: 20rpx;
+	margin-right: 20rpx; 
+  font-size:24rpx;
+  color: #101D37;
+}
+.comment-list{
+	margin-top: 40rpx;
+}
+.comment-list .left image{
+	width:100rpx;
+	height:100rpx;
+  border-radius: 50%;
+	float:left;
+}
+.comment-list .right{
+  margin-left:135rpx;
+}
+.comment-list .right view.name{
+  font-size:30rpx;
+}
+.comment-list .right image{
+  width:20rpx;
+  height:20rpx;
+  margin-top:20rpx;
+  margin-right:5rpx;
+}
+.comment-list .right text{
+  font-size:20rpx;
+  margin-left:20rpx;
+  color: #9399A5;
+}
+.content-1>view{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #101D37;
+	margin-top: 45rpx;
+}
+.content-1 view.all{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #859BAE;
+}
+.content-1 text{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9399A5;
+}
+.question{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+	margin-top: 20rpx;
+}
+.question text.ask{
+	font-family: PingFangSC-Medium;
+	font-size: 35rpx;
+	color: #394043;
+}
+.question text.look{
+	float:right;
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9C9FA1;
+}
+.ask-list{
+	margin-top:20rpx;
+}
+.ask-list text.wen{
+	background: #FE615A;
+	border-radius: 2px;
+	color:white;
+}
+.ask-list text.que{
+  color:black;
+  margin-left:20rpx;
+  font-size:30rpx;
+}
+.ask-list>view>text{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9C9FA1;
+	margin-left: 43rpx;
+}
+.intro{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+	margin-top: 20rpx;
+  height:520rpx;
+}
+.intro text.around{
+	font-family: PingFangSC-Medium;
+	font-size: 35rpx;
+	color: #394043;
+}
+.intro text.more{
+	float:right;
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #9C9FA1;
+}
+.card{
+	margin-top: 20rpx;
+}
+.card image{
+	width:310rpx;
+	height:292rpx;
+}
+.card-1{
+	float:left;
+  margin-right:10rpx;
+}
+.card view.address{
+	font-family: PingFangSC-Regular;
+	font-size: 35rpx;
+	color: #394043;
+}
+.card view.add{
+	font-family: PingFangHK-Regular;
+	font-size: 25rpx;
+	color: #9C9FA1;
+}
+.card view.money{
+	font-family: PingFangSC-Medium;
+	font-size: 25rpx;
+	color: #FE615A;
+}
+.card-2 image{
+	margin-left: 23rpx;
+}
+.card-2>view{
+	margin-left: 40rpx;
+}
+.bottom{
+	padding-left: 48rpx;
+	padding-right: 48rpx;
+}
+.bottom ul{
+  margin-top:80rpx;
+}
+.bottom ul li{
+	width:45%;
+	float:left;
+	text-align: center;
+	color:white;
+	height:50rpx;
+	line-height: 50rpx;
+}
+.bottom ul li.discount{
+	background-image: linear-gradient(-148deg, #FF9793 0%, #FE615A 100%); 
+	border-radius: 100rpx;
+}
+.bottom ul li.contack{
+	background-image: linear-gradient(-148deg, #6898F8 0%, #2C68E0 100%);
+	border-radius: 100rpx;
+	margin-left: 20rpx;
+}

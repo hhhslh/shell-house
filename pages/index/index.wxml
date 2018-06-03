@@ -1,0 +1,139 @@
+<!--index.wxml-->
+<view class="content">
+		<text class="river">{{mainCard.data.house_info.title}}</text>
+		<text class="shop">商铺</text>
+		<text class="sale">在售</text>
+		<view>别名：{{mainCard.data.house_info.seTitle}}</view>
+<view class="include">
+  <image src="{{mainCard.data.house_info.images[0].image_path}}"></image>
+	<view class="image">
+			 <image src="{{mainCard.data.house_info.images[1].image_path}}"></image> 
+			 <image src="{{mainCard.data.house_info.images[2].image_path}}" class="active"></image> 
+	</view>
+  <view class="bg">
+      <view class="jia">+78</view>
+      <view class="look-more">查看更多</view>
+  </view>
+</view>
+		 <ul class="clearfix">
+			<li>
+				<view>售价</view>
+				<text>{{mainCard.data.house_info.price}}万</text>
+			</li>
+			<li>
+				<view>建筑面积</view>
+				<text>{{mainCard.data.house_info.area}}㎡</text>
+			</li>
+			<li>
+				<view>房型</view>
+				<text>{{mainCard.data.house_info.type}}</text>
+			</li>
+		</ul>  
+		<view class="time">开盘时间：<text>{{mainCard.data.house_info.open_time}}</text></view>
+		<view class="address">地址：<text>{{mainCard.data.house_info.address}}</text></view>
+	</view>
+<view class="ad">
+		<text class="discount">全款9.8折，贷款9.9折</text>
+		<text class="take">领优惠</text>
+	</view>
+<view class="more-mes">
+		<text>更多房源信息</text>
+	</view>
+<view class="line"></view>
+<view class="num">
+  <view class="room" bindtap="tapName">
+    <text class="active">四室</text>
+    <text>三室</text>
+    <text>二室</text>
+  </view>
+	<view class="list" wx:for="{{mainList.data.house_lists}}">
+			  <image src="{{item.image}}"></image>  
+		<view class="list-content">
+				<text class="layout">四室一厅两卫</text>
+				<text class="sale">在售</text>
+				<text class="hot">热门</text>
+				<view>建面191㎡/南北向</view>
+				<view>
+					<text>多卫</text>
+					<text>干湿分离</text>
+					<text>户型方正</text>
+				</view>
+				<view class="money">约{{item.price}}万/套</view> 
+			</view>
+		</view>
+  </view>
+<view class="line"></view>
+<view class="user-comment">
+		<text class="user">用户评论</text>
+		<text class="more">更多点评</text>
+	<view class="point">
+			<image src="/images/Star_small_act@2x.png" class="active"></image>
+      <image src="/images/Star_small_act@2x.png"></image>
+      <image src="/images/Star_small_act@2x.png"></image>
+      <image src="/images/Star_small_act@2x.png"></image>
+      <image src="/images/Star_small_nor@2x.png"></image>
+			<text class="score">综合<text>4.0</text>分</text>
+	</view>
+	<view class="grade">
+		<text wx:for="{{mainCard.data.comments.tab_score}}">{{item.name}}{{item.score}}分</text>
+	</view>
+	<view class="border"></view>
+		<view class="buy">
+			<text class="active">全部点评(6)</text>
+			<text>实看用户(5)</text>
+			<text>购买用户(5)</text>
+      <view></view>
+			<text class="active">好评(5)</text>
+			<text>差评(5)</text>
+			<text>有图(5)</text>
+		</view>
+	<view class="comment-list" wx:for="{{mainCard.data.comments.comment}}">
+    <view class="left">
+			<image src="{{item.user_image}}"></image> 
+    </view>
+    <view class="right">
+			<view class="name">{{item.user_name}}</view>
+      <image src="/images/Star_small_act@2x.png"></image> 
+      <image src="/images/Star_small_act@2x.png"></image> 
+      <image src="/images/Star_small_act@2x.png"></image> 
+      <image src="/images/Star_small_act@2x.png"></image> 
+      <image src="/images/Star_small_nor@2x.png"></image> 
+      <text wx:for="{{item.user_score}}">{{item.name}}{{item.score}}</text>
+    </view>
+		<view class="content-1">
+				<view>{{item.user_comment}}</view>
+				<view class="all">全文</view>
+				<text>{{item.create_time}}</text>
+			</view>
+		</view>		
+	</view>
+<view class="line"></view>
+<view class="question">
+		<text class="ask">买房问大家(123)</text>
+		<text class="look">查看全部</text>
+	<view class="ask-list" wx:for="{{mainCard.data.questions}}">
+			<text class="wen">问</text>
+			<text class="que">{{item.question}}</text>
+			<view><text>{{item.attention_num}}人关注 | {{item.answer_num}}个回答</text></view>
+	</view>
+</view>
+	<view class="border"></view>
+<view class="line"></view>
+<view class="intro">
+		<text class="around">周边推荐</text>
+		<text class="more">更多推荐</text>
+	<view class="card" wx:for="{{mainCard.data.hotlists}}">
+		<view class="card-1">
+			 <image src="{{item.image}}"></image> 
+				<view class="address">{{item.title}}</view>
+				<view class="add">{{item.address}}</view>
+				<view class="money">均价{{item.uprice}}元/平</view>
+			</view>
+	</view>
+</view>
+<view class="bottom">
+		<ul class="clearfix">
+			<li class="discount">询优惠</li>
+			<li class="contack">联系售楼处</li>
+		</ul>
+</view>
